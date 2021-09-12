@@ -1,0 +1,17 @@
+<app-header></app-header>
+<div class="content">
+  <div class="graph">
+    <h2>Graph 1: </h2>
+    <app-graph-bar  [barChartLabels]="labels1"
+                    [barChartType]="type1"
+                    [barChartLegend]="barChartLegend1"
+                    [barChartData]="barChartData1"></app-graph-bar>
+  </div>
+  <div class="graph">
+    <h2>Graph 2: </h2>
+    <app-graph-bar  [barChartLabels]="labels2"
+                    [barChartType]="type2"
+                    [barChartLegend]="barChartLegend2"
+                    [barChartData]="barChartData2"></app-graph-bar>
+  </div>
+</div>

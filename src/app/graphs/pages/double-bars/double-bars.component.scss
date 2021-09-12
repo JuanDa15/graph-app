@@ -1,0 +1,27 @@
+@import '/src/styles.scss';
+
+.content{
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+
+.graph{
+  flex: 1 1 auto;
+  max-width: 50%;
+
+
+  h2{
+    color:$oxford_blue;
+  }
+}
+
+@media screen and (max-width:800px){
+  .content{
+    flex-wrap: wrap;
+  }
+
+  .graph{
+    max-width: 100%;
+  }
+}

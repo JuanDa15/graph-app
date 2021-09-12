@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+$olive_drab_7: #463f1a;
+$dark_brown: #60492c;
+$linen: #f9ebe0;
+$blue_green: #208aae;
+$oxford_blue: #0d2149;
+
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.content{
+  padding: .7rem;
+}
+
+.btn{
+  border: none;
+  border: 1px solid #999;
+  padding: .5rem 1rem;
+  border-radius: .2rem;
+  background-color: $blue_green;
+  color: #fff;
+  cursor: pointer;
+  transition: all .5s ease;
+  margin-left: 1rem;
+
+  &:hover{
+    background-color: $oxford_blue;
+  }
+}

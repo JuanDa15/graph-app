@@ -1,7 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: 'graphs',
+    loadChildren: ()=>import('src/app/graphs/graphs.module').then( m => m.GraphsModule)
+  },
+  {
+    path: '**',
+    redirectTo: 'graphs'
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
